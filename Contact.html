@@ -1,224 +1,174 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
+  <head>
+    <title>Contact</title>
+    <meta charset="utf-8" />
 
-<head>
-    <title></title>
-    <meta charset="utf-8">
-</head>
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
 
-<body>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-<div>
+  <body id="contact">
+    <div id="container">
+      <header>
+        <div class="main-header">
+          <div class="logo">
+            <img src="images/logo.png" alt="Great Cliffs Logo" />
+          </div>
 
-    <header>
-
-        <div id="container">
-    <header>
-       <img src="images/cliff_ocean.jpg" alt="Ocean View Cliff" width="1280" height="564">
-
-    <div class="main-header">
-
-        <div class="logo">
-            <img src="images/logo.png" alt="Great Cliffs Logo" width="125">
-        </div>
-
-        <nav class="main-menu">
+          <nav class="main-menu">
             <ul>
-                <li>Home</li>
-                <li>Cliffs</li>
-                <li>Events</li>
-                <li>Contact</li>
+              <li>
+                <a href="index.html">Home</a>
+              </li>
+
+              <li>
+                <a href="#">Cliffs</a>
+              </li>
+
+              <li>
+                <a href="activities.html">Activities</a>
+              </li>
+
+              <li class="active">
+                <a href="contact.html">Contact</a>
+              </li>
             </ul>
-        </nav>
+          </nav>
+        </div>
+      </header>
 
-    </div>
-
-</header>
-
-    <main>
-
-        <!-- <h2>Introducing California's Greatest Cliffs</h2>
-
-        <h3>What is so unique about California cliffs?</h3>
+      <main>
+        <h1>Contacting Us</h1>
 
         <p>
-            California cliffs are one of a kind in the United States where no cliffs are as magnificent and beautiful as them. And California is the only state that have cliffs that fronts all possible environments: sea, river, mountains and canyons. There are four such individual unique cliffs: West Cliff, North Cliff, East Cliff and South Cliff. All offer fantastic overlooking views, recreational areas, camping sites, wildlife watch spots and overnight cabins.
+          You can drop by the visitors information center at the cliff site that
+          you plan on visiting. They are open 7 days a week from 8.00AM to
+          5.00PM. You can also contact us directly if you need additional
+          information about the Cliffs, Hours of Operations, Facilities or
+          questions about this site using one of the following:
         </p>
 
-        <h3>Where are these cliffs?</h3>
-
         <p>
-            Located within a 100 mile radius from Irvine, California, they can be reached by roads easily. The closest cliff to Irvine is West Cliff, which is the most popular and most visited.
-        </p> -->
+          <strong>Phone:</strong> (800)GCLIFFS<br />
+          <strong>Email:</strong> info@greatcliffs.com
+        </p>
 
-         <h1>Activities</h1>
+        <form action="/contact" method="post">
+          <fieldset>
+            <legend>Contact Form</legend>
 
-    <!-- <p>
-        There are many planned activities at all the cliff sites. Some are scheduled daily, weekly, monthly and yearly. These activities are not however run by the state park and recreational department. They are operated and manage by private vendors but are partners with the state department. Therefore, for schedule inquiries or information, please contact them directly. For a list of activities, please refer to the table below:
-    </p>
+            <label>Name:</label><br />
+            <input type="text" placeholder="John Doe" /><br /><br />
 
-    <table border="1">
+            <label>Email:</label><br />
+            <input type="email" placeholder="johndoe@gmail.com" /><br /><br />
 
-        <caption>Activities at the Cliffs</caption>
+            <label>Phone:</label><br />
+            <input type="text" placeholder="xxx-xxx-xxxx" /><br /><br />
 
-        <thead>
-            <tr>
-                <th>Activity</th>
-                <th>West Cliff</th>
-                <th>North Cliff</th>
-                <th>East Cliff</th>
-                <th>South Cliff</th>
-            </tr>
-        </thead>
+            <label>How should we contact you?</label>
 
-        <tbody>
+            <input type="radio" name="contact" checked />
+            <span>Email</span>
 
-            <tr>
-                <td>Hiking</td>
-                <td>College Hikes</td>
-                <td>Family Fun</td>
-                <td>Treasure Trails</td>
-                <td>Canyon Explorer</td>
-            </tr>
+            <input type="radio" name="contact" />
+            <span>Phone</span>
 
-            <tr>
-                <td>Kayak</td>
-                <td>Western Kayak Meetup</td>
-                <td>Not Available</td>
-                <td>Youth Kayaking</td>
-                <td>Kayak Down</td>
-            </tr>
+            <br /><br />
 
-            <tr>
-                <td>Skydiving</td>
-                <td>Seacliff Diving</td>
-                <td>Sky is the limit</td>
-                <td>Not Available</td>
-                <td>Sky Diving for Beginners</td>
-            </tr>
+            <label>Which Cliff are you inquiring?</label><br />
 
-            <tr>
-                <td>Biking</td>
-                <td>Bicycle for One</td>
-                <td>Not Available</td>
-                <td>Bike Meetup Group</td>
-                <td>Not Available</td>
-            </tr>
+            <select>
+              <option>West Cliff</option>
+              <option>North Cliff</option>
+              <option>East Cliff</option>
+              <option>South Cliff</option>
+            </select>
 
-            <tr>
-                <td>Camping</td>
-                <td>Youth Camp</td>
-                <td>Rent a Tent</td>
-                <td>Campground Adventure</td>
-                <td>Sunset Camping</td>
-            </tr>
+            <br /><br />
 
-        </tbody>
+            <label>How did you hear about us:</label><br />
 
-    </table> -->
+            <textarea></textarea>
 
-<form action="/contact" method="post">
+            <br /><br />
 
-    <h2>Fill Out This Form:</h2>
+            <input type="submit" value="Inquire" />
+          </fieldset>
+        </form>
+      </main>
 
-    <fieldset>
-
-        <legend>Contact Form</legend>
-
-        <label>Enter your full name</label><br>
-        <input type="text"><br><br>
-
-        <label>Enter your email</label><br>
-        <input type="email"><br><br>
-
-        <label>Enter your phone</label><br>
-        <input type="text"><br><br>
-
-        <p>How should we contact you?</p>
-
-        <input type="radio" name="contact">
-        <label>Email</label>
-
-        <input type="radio" name="contact">
-        <label>Phone</label>
-
-        <br><br>
-
-        <label>Which Cliff are you inquiring?</label><br>
-
-        <select>
-            <option>West Cliff</option>
-            <option>North Cliff</option>
-            <option>East Cliff</option>
-            <option>South Cliff</option>
-        </select>
-
-        <br><br>
-
-        <label>How did you hear about us:</label><br>
-
-        <textarea rows="3" cols="30"></textarea>
-
-        <br><br>
-
-        <input type="submit" value="Inquire">
-
-    </fieldset>
-
-</form>
-    
-    </main>
-
-    <section>
+      <section>
         <ul id="partners">
-            <li class="partner">
-                <h3>Partner 1 Image</h3>
-            </li>
-            <li class="partner">
-                <h3>Partner 2 Image</h3>
-            </li>
-            <li class="partner">
-                <h3>Partner 3 Image</h3>
-            </li>
-            <li class="partner">
-                <h3>Partner 4 Image</h3>
-            </li>
-            <li class="partner">
-                <h3>Partner 5 Image</h3>
-            </li>
-            <li class="partner">
-                <h3>Partner 6 Image</h3>
-            </li>
+          <li class="partner">
+            <img
+              src="images/partners/partner-bustour.png"
+              alt="Partner Bus Tours"
+            />
+          </li>
 
+          <li class="partner">
+            <img
+              src="images/partners/partner-cabinrental.png"
+              alt="Partner Cabin Rental"
+            />
+          </li>
+
+          <li class="partner">
+            <img
+              src="images/partners/partner-campingadv.png"
+              alt="Partner Camping Adventure"
+            />
+          </li>
+
+          <li class="partner">
+            <img
+              src="images/partners/partner-collegetours.png"
+              alt="Partner College Tours"
+            />
+          </li>
+
+          <li class="partner">
+            <img
+              src="images/partners/partner-rentalbike.png"
+              alt="Partner Bike Rentals"
+            />
+          </li>
+
+          <li class="partner">
+            <img
+              src="images/partners/partner-tourgroup.png"
+              alt="Partner Tour Group"
+            />
+          </li>
         </ul>
+      </section>
 
-    </section>
-
-    <footer>
-
+      <footer>
         <div id="nondisclaimer">
+          <div class="copy">&copy; Copyright 2020 :: GreatCliffs.com</div>
 
-            <div class="copy">
-                &copy; Copyright 2020 :: GreatCliffs.com
-            </div>
-
-            <div class="social">
-                <h3>Facebook Image</h3>
-                <h3>Instagram Image</h3>
-                <h3>Twitter Image</h3>
-            </div>
-
+          <div class="social">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-twitter"></a>
+          </div>
         </div>
 
         <div id="disclaimer">
-            <p>
-                This website is designed and created solely for educational purposes only at Westcliff University. All contents are not intended for any commercial gain or use.
-            </p>
+          <p>
+            This website is designed and created solely for educational purposes
+            only at Westcliff University. All contents are not intended for any
+            commercial gain or use.
+          </p>
         </div>
-
-    </footer>
-
-</div>
-
-</body>
+      </footer>
+    </div>
+  </body>
 </html>
