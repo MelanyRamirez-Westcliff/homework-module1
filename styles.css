@@ -26,6 +26,22 @@ header {
     background-size: 1500px;
 }
 
+/* Home */
+
+#timeofday {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    background: linear-gradient(0deg, rgba(251,215,139,1) 0%, rgba(118,213,245,1) 100%);
+    color: #3a3a3a;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+#clock {
+    color: #125688;
+}
+
 .main-header {
     background-color: rgba(255, 255, 255, 0.8);
     width: 700px;
@@ -40,7 +56,6 @@ header {
     margin: 0 2em 0 0;
     float: left;
 }
-
 
 /* Navigation */
 
@@ -84,7 +99,6 @@ header {
     color: #fff;
 }
 
-
 /* Main content */
 
 main {
@@ -102,7 +116,6 @@ main h2 {
 main p {
     line-height: 1.5em;
 }
-
 
 /* Activities table */
 
@@ -150,7 +163,6 @@ td:first-child {
     background: #BDE1FF;
 }
 
-
 /* Cliffs */
 
 #cliffs-container {
@@ -179,7 +191,6 @@ td:first-child {
     height: 225px;
     display: block;
 }
-
 
 /* Contact form */
 
@@ -225,7 +236,6 @@ form input[type="submit"] {
     font-weight: bold;
 }
 
-
 /* Partners */
 
 section {
@@ -252,7 +262,6 @@ section #partners .partner img {
     width: 90px;
     height: 90px;
 }
-
 
 /* Footer */
 
