@@ -71,10 +71,9 @@
           which is the most popular and most visited.
         </p>
       </main>
-
       <section>
         <ul id="partners">
-          <li class="partner">
+          <!-- <li class="partner">
             <img
               src="images/partners/partner-bustour.png"
               alt="Partner Bus Tours"
@@ -114,7 +113,7 @@
               src="images/partners/partner-tourgroup.png"
               alt="Partner Tour Group"
             />
-          </li>
+          </li> -->
         </ul>
       </section>
 
@@ -144,16 +143,16 @@
       //Create a time data function
       function currentTime() {
         //Declare variables
-        var d = new Date(); //Get current date
-        var hr = d.getHours(); //Get current hours
-        var min = d.getMinutes(); //Get current minutes
-        var sec = d.getSeconds(); //Get current seconds
-        var ampm; //Declare empty variable to store AM or PM
+        var d = new Date();
+        var hr = d.getHours();
+        var min = d.getMinutes();
+        var sec = d.getSeconds();
+        var ampm;
 
-        var utchr = d.getUTCHours(); //Get current Greenwich Mean Time (GMT)
-        var timeDiff; //To store time difference between GMT hour and Local hour
-        var adjTimeDiff; //To store time difference converted to positive number
-        var timeZone; //To store the 4 time zones (PT,MT,CT,ET)
+        var utchr = d.getUTCHours();
+        var timeDiff;
+        var adjTimeDiff;
+        var timeZone;
 
         //Calculate time difference between GMT hour and Local hour
         timeDiff = utchr - hr;
@@ -208,6 +207,34 @@
 
       //Run time data function every 1 second
       setInterval(currentTime, 1000);
+
+      //Create partners array
+      var partners = [
+        ["partner-bustour.png", "Partner Bus Tours"],
+        ["partner-cabinrental.png", "Partner Cabin Rental"],
+        ["partner-campingadv.png", "Partner Camping Adventure"],
+        ["partner-collegetours.png", "Partner College Tours"],
+        ["partner-rentalbike.png", "Partner Bike Rentals"],
+        ["partner-tourgroup.png", "Partner Tour Group"],
+      ];
+
+      //Create empty variable to store partners HTML
+      var partnerList = "";
+
+      //Create partner list with a for loop
+      for (var i = 0; i < partners.length; i++) {
+        partnerList +=
+          '<li class="partner">' +
+          '<img src="images/partners/' +
+          partners[i][0] +
+          '" alt="' +
+          partners[i][1] +
+          '">';
+        ("</li>");
+      }
+
+      //Display partners on the HTML page
+      document.getElementById("partners").innerHTML = partnerList;
     </script>
   </body>
 </html>
