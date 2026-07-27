@@ -1,3 +1,6 @@
+/* ------ PARTNERS ------ */
+
+//Create partners array
 var partners = [
   ["partner-bustour.png", "Partner Bus Tours"],
   ["partner-cabinrental.png", "Partner Cabin Rental"],
@@ -7,8 +10,10 @@ var partners = [
   ["partner-tourgroup.png", "Partner Tour Group"],
 ];
 
+//Create empty variable to store partners HTML
 var partnerList = "";
 
+//Create partner list with a for loop
 for (var i = 0; i < partners.length; i++) {
   partnerList +=
     '<li class="partner">' +
@@ -20,4 +25,5 @@ for (var i = 0; i < partners.length; i++) {
     "</li>";
 }
 
+//Display partners on the HTML page
 document.getElementById("partners").innerHTML = partnerList;
