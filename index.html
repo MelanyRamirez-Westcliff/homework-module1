@@ -71,50 +71,9 @@
           which is the most popular and most visited.
         </p>
       </main>
+
       <section>
-        <ul id="partners">
-          <!-- <li class="partner">
-            <img
-              src="images/partners/partner-bustour.png"
-              alt="Partner Bus Tours"
-            />
-          </li>
-
-          <li class="partner">
-            <img
-              src="images/partners/partner-cabinrental.png"
-              alt="Partner Cabin Rental"
-            />
-          </li>
-
-          <li class="partner">
-            <img
-              src="images/partners/partner-campingadv.png"
-              alt="Partner Camping Adventure"
-            />
-          </li>
-
-          <li class="partner">
-            <img
-              src="images/partners/partner-collegetours.png"
-              alt="Partner College Tours"
-            />
-          </li>
-
-          <li class="partner">
-            <img
-              src="images/partners/partner-rentalbike.png"
-              alt="Partner Bike Rentals"
-            />
-          </li>
-
-          <li class="partner">
-            <img
-              src="images/partners/partner-tourgroup.png"
-              alt="Partner Tour Group"
-            />
-          </li> -->
-        </ul>
+        <ul id="partners"></ul>
       </section>
 
       <footer>
@@ -138,103 +97,10 @@
       </footer>
     </div>
 
-    <!-- JavaScript Codes -->
-    <script>
-      //Create a time data function
-      function currentTime() {
-        //Declare variables
-        var d = new Date();
-        var hr = d.getHours();
-        var min = d.getMinutes();
-        var sec = d.getSeconds();
-        var ampm;
+    <!-- Digital Clock -->
+    <script src="js/digclock.js"></script>
 
-        var utchr = d.getUTCHours();
-        var timeDiff;
-        var adjTimeDiff;
-        var timeZone;
-
-        //Calculate time difference between GMT hour and Local hour
-        timeDiff = utchr - hr;
-
-        //Convert time difference, if negative, to positive
-        if (timeDiff < 0) {
-          adjTimeDiff = timeDiff + 24;
-        } else {
-          adjTimeDiff = timeDiff;
-        }
-
-        //Check which time zone
-        if (adjTimeDiff == 8) {
-          timeZone = "PT";
-        } else if (adjTimeDiff == 7) {
-          timeZone = "MT";
-        } else if (adjTimeDiff == 6) {
-          timeZone = "CT";
-        } else if (adjTimeDiff == 5) {
-          timeZone = "ET";
-        }
-
-        //Add 0 to single digits for seconds
-        if (sec < 10) {
-          sec = "0" + sec;
-        }
-
-        //Add 0 to single digits for minutes
-        if (min < 10) {
-          min = "0" + min;
-        }
-
-        //Determine AM or PM string
-        if (hr == 12) {
-          ampm = "PM";
-        } else if (hr > 12) {
-          hr -= 12;
-          ampm = "PM";
-        } else {
-          ampm = "AM";
-        }
-
-        //Assemble time format to display
-        var time = hr + ":" + min + ":" + sec + " " + ampm + " " + timeZone;
-
-        //Display current local time and time zone on HTML elements
-        document.getElementById("clock").innerText = time;
-      }
-
-      //Initial run of time data function
-      currentTime();
-
-      //Run time data function every 1 second
-      setInterval(currentTime, 1000);
-
-      //Create partners array
-      var partners = [
-        ["partner-bustour.png", "Partner Bus Tours"],
-        ["partner-cabinrental.png", "Partner Cabin Rental"],
-        ["partner-campingadv.png", "Partner Camping Adventure"],
-        ["partner-collegetours.png", "Partner College Tours"],
-        ["partner-rentalbike.png", "Partner Bike Rentals"],
-        ["partner-tourgroup.png", "Partner Tour Group"],
-      ];
-
-      //Create empty variable to store partners HTML
-      var partnerList = "";
-
-      //Create partner list with a for loop
-      for (var i = 0; i < partners.length; i++) {
-        partnerList +=
-          '<li class="partner">' +
-          '<img src="images/partners/' +
-          partners[i][0] +
-          '" alt="' +
-          partners[i][1] +
-          '">';
-        ("</li>");
-      }
-
-      //Display partners on the HTML page
-      document.getElementById("partners").innerHTML = partnerList;
-    </script>
+    <!-- Partners -->
+    <script src="js/site_scripts.js"></script>
   </body>
 </html>
