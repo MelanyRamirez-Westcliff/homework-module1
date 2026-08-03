@@ -362,3 +362,14 @@ footer #nondisclaimer .social .fa-instagram {
   background: #125688;
   color: white;
 }
+/* Activities */
+
+.selected {
+    background-color: #9ed034;
+    color: white;
+    font-weight: bold;
+}
+
+.selectable {
+    cursor: pointer;
+}
